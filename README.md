@@ -5,23 +5,11 @@ Live link; https://kreeo-task.vercel.app
 
 Quick Start
 bash# Setup
-npx create-next-app@latest kreeo-figma-plugin --typescript --tailwind --app
-cd kreeo-figma-plugin
-npm install zustand jose date-fns lucide-react clsx tailwind-merge
 
-# Create folders
-
-mkdir -p components/plugin components/ui lib/auth lib/speech stores types
-
-# Environment
-
-cp .env.example .env.local
-
-# Edit .env.local and add a JWT_SECRET (32+ characters)
-
-# Run
-
+To run locally; clone the repo, open in IDE of choice, and;
+npm install
 npm run dev
+
 Login: designer@kreeo.me / kreeo123
 
 What It Does
