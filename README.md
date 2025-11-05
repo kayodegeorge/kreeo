@@ -1,6 +1,8 @@
 Kreeo Figma Plugin Assessment
 A Nextjs app simulating a Figma plugin with persistent authentication and speech-to-text.
 
+Live link; https://kreeo-task.vercel.app
+
 Quick Start
 bash# Setup
 npx create-next-app@latest kreeo-figma-plugin --typescript --tailwind --app
@@ -20,7 +22,7 @@ cp .env.example .env.local
 # Run
 
 npm run dev
-Login: ajmensah@kreeo.me / kreeo123
+Login: designer@kreeo.me / kreeo123
 
 What It Does
 Task 1: Persistent Authentication ✅
@@ -76,12 +78,6 @@ Example Code:
 typescript// Plugin code (code.ts)
 await figma.clientStorage.setAsync('auth_token', token);
 figma.ui.postMessage({ type: 'auth-success', token });
-
-For Production Speech-to-Text:
-
-Use OpenAI Whisper API (better accuracy, all browsers)
-Or Google Cloud Speech-to-Text
-Web Speech API only works in Chrome/Edge/Safari
 
 Tech Stack
 

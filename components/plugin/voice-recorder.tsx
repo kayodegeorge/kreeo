@@ -64,7 +64,7 @@ export function VoiceRecorder() {
 
   return (
     <div className='p-6 space-y-6'>
-      {/* Recording Controls */}
+
       <div className='bg-gray-50 rounded-lg p-6'>
         <div className='flex flex-col items-center'>
           <button
@@ -92,7 +92,7 @@ export function VoiceRecorder() {
         </div>
       </div>
 
-      {/* Live Transcript */}
+    
       {(transcript || interimTranscript) && (
         <div className='border border-gray-200 rounded-lg p-4'>
           <h3 className='text-sm font-medium text-gray-700 mb-2'>Transcript</h3>

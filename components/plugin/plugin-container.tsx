@@ -26,18 +26,16 @@ export function PluginContainer() {
 
   return (
     <div className='h-screen flex flex-col bg-white'>
-      {/* Plugin Header */}
       <div className='bg-purple-600 text-white px-4 py-3 flex items-center justify-between'>
         <div className='flex items-center space-x-2'>
           <div className='w-8 h-8 bg-white rounded-md flex items-center justify-center'>
             <span className='text-purple-600 font-bold text-lg'>K</span>
           </div>
-          <span className='font-semibold'>Kreeo Plugin</span>
+          <span className='font-semibold'>Kreeo</span>
         </div>
         <SessionIndicator />
       </div>
 
-      {/* Main Content */}
       <div className='flex-1 overflow-y-auto'>
         {isAuthenticated ? <VoiceRecorder /> : <AuthPanel />}
       </div>

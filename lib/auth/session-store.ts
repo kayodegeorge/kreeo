@@ -7,7 +7,7 @@ const STORAGE_KEYS = {
 }
 
 export class SessionStore {
-  // Store token securely
+  // storing token securely
   static saveToken(token: AuthToken): void {
     if (typeof window === 'undefined') return
 

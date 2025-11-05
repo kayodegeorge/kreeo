@@ -20,7 +20,7 @@ export function AuthPanel() {
       <div className='w-full max-w-sm'>
         <div className='text-center mb-8'>
           <h2 className='text-2xl font-bold text-gray-900 mb-2'>
-            Welcome to Kreeo
+            Welcome to Kreeo!
           </h2>
           <p className='text-gray-600 text-sm'>
             Connect your account to start recording design insights

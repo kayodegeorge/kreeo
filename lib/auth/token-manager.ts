@@ -5,8 +5,8 @@ const SECRET_KEY = new TextEncoder().encode(
   process.env.JWT_SECRET || 'kreeo-figma-plugin-secret-key-change-in-production'
 )
 
-const TOKEN_EXPIRY = 15 * 60 * 1000 // 15 minutes
-const REFRESH_TOKEN_EXPIRY = 7 * 24 * 60 * 60 * 1000 // 7 days
+const TOKEN_EXPIRY = 15 * 60 * 1000
+const REFRESH_TOKEN_EXPIRY = 7 * 24 * 60 * 60 * 1000
 
 export class TokenManager {
   static async generateTokens(
@@ -50,7 +50,6 @@ export class TokenManager {
   }
 
   static shouldRefresh(expiresAt: number): boolean {
-    // Refresh if less than 5 minutes remaining
     const timeRemaining = expiresAt - Date.now()
     return timeRemaining < 5 * 60 * 1000
   }
